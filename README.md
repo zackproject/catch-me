@@ -5,7 +5,7 @@ Cómo jugar
 
     Abre el archivo index.html en tu navegador web.
 
-    Verás un objeto rojo que se mueve dentro de un contenedor.
+    Verás un objeto azul que se mueve dentro de un contenedor.
 
     Haz clic en el objeto mientras se mueve para acumular puntos.
 
