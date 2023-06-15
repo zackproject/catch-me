@@ -97,8 +97,8 @@
       let maxX = containerWidth - targetSize;
       let maxY = containerHeight - targetSize;
 
-      let randomX = Math.random() * maxX;
-      let randomY = Math.random() * maxY;
+      let randomX = Math.random() * (maxX - 0) + 0;
+      let randomY = Math.random() * (maxY - 0) + 0;
 
       target.style.left = randomX + "px";
       target.style.top = randomY + "px";
