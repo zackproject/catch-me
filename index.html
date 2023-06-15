@@ -84,21 +84,22 @@
         speed++;
       }
     }
-
+      
+    const containerWidth = document.getElementById("game-container").offsetWidth;
+    const containerHeight = document.getElementById("game-container").offsetHeight;
+    const targetSize = target.offsetWidth;
+    const maxX = containerWidth - targetSize;
+    const maxY = containerHeight - targetSize; 
+    
     function moveTarget() {
-      let containerWidth = document.getElementById("game-container").offsetWidth;
-      let containerHeight = document.getElementById("game-container").offsetHeight;
-      let targetSize = target.offsetWidth;
-      let maxX = containerWidth - targetSize;
-      let maxY = containerHeight - targetSize;
-
+      
       let randomX = Math.floor(Math.random() * maxX);
       let randomY = Math.floor(Math.random() * maxY);
 
       target.style.left = randomX + "px";
       target.style.top = randomY + "px";
 
-      setTimeout(moveTarget, 2000 / speed);
+      setTimeout(moveTarget, 1000 / speed);
     }
   </script>
 </body>
