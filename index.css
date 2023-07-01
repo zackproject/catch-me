@@ -1,44 +1,61 @@
+/*El html y body ocupa toda la pagina*/
+html,
 body {
+    height: 100%;
+    margin: 0;
+}
+
+/* El juego esta dentro de un componente flex */
+#game {
     text-align: center;
-    padding-top: 1px;
     font-family: Arial, sans-serif;
-    font-size: 150%;
     background: rgb(37, 37, 37);
     color: aliceblue;
-    display: block;
-  }
+    display: flex;
+    flex-direction: column;
+}
 
-  #game-container {
+#game-title {
+    flex: 0 1 auto;
+    /*Ocupa el flex segun el contenido que tiene*/
+}
+
+#game-container {
     position: relative;
-    width: 100%;
-    height: 100vh;;
     overflow: hidden;
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(111, 0, 255);
-  }
+    /*Ocupara todo el flex restante*/
+    flex: 1 1 auto;
+}
 
-  #speedDisplay {
-    text-align: end;
+
+#speedDisplay {
+    /* Si game-container ya es relative, este hijo puede ser absoluto*/
+    position: absolute;
+    top: 0px;
+    right: 5%;
     color: rgb(241, 255, 46);
-    margin-right: 5%;
-  }
+}
 
-  #scoreDisplay {
-    text-align: end;
+#scoreDisplay {
+    /* Si game-container ya es relative, este hijo puede ser absoluto*/
+    position: absolute;
+    top: 30px;
+    right: 5%;
     color: rgb(119, 255, 255);
-    margin-right: 5%;
-  }
-  
-  #target { 
+}
+
+#target {
     position: absolute;
     width: 100px;
     height: 100px;
     background-color: rgb(48, 121, 255);
     border-radius: 50%;
     transition: top 0.5s, left 0.5s;
-  }
-  
-  #target:hover {
+}
+
+#target:hover {
     background: rgb(0, 255, 166);
-  }
+}
