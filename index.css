@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    padding-top: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 150%;
+    background: rgb(37, 37, 37);
+    color: aliceblue;
+    display: block;
+  }
+
+  #game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(111, 0, 255);
+  }
+
+  #speedDisplay {
+    text-align: end;
+    color: rgb(241, 255, 46);
+    margin-right: 5%;
+  }
+
+  #scoreDisplay {
+    text-align: end;
+    color: rgb(119, 255, 255);
+    margin-right: 5%;
+  }
+  
+  #target { 
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(48, 121, 255);
+    border-radius: 50%;
+    transition: top 0.5s, left 0.5s;
+  }
+  
+  #target:hover {
+    background: rgb(0, 255, 166);
+  }
