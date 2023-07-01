@@ -53,7 +53,7 @@ body {
     height: 100px;
     background-color: rgb(48, 121, 255);
     border-radius: 50%;
-    transition: top 0.5s, left 0.5s;
+    transition: top 0.5s, left 0.5s, width 0.5s, height 0.5s;
 }
 
 #target:hover {
